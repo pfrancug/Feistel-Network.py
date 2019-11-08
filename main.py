@@ -13,5 +13,10 @@ ciagBitowTekstuJawnego = ''
 for znak in tekstJawny:
     kodASCII = ord(znak)
     kodBinarny = bin(kodASCII)[2:].zfill(8)
+    ciagBitowTekstuJawnego += kodBinarny
 
-    print(znak, kodASCII, kodBinarny)
+ciagBitowTekstuJawnego += '0' * (64 - len(ciagBitowTekstuJawnego) % 64)
+
+# funkcja feistela
+def dodawanie(a, b):
+    
